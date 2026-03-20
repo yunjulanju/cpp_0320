@@ -1,34 +1,11 @@
 #include "World.h"
-#include "Player.h"
-#include "Monster.h"
-#include "Slime.h"
-#include "Goblin.h"
-#include "Boar.h"
 
 UWorld::UWorld()
+	: PlayerCount(0), GoblinCount(0), SlimeCount(0), WildBoarCount(0), Player(nullptr), Goblins(nullptr), WildBoars(nullptr), Slimes(nullptr)
 {
-	MyPlayer = new APlayer;
-	Monsters = new AMonster[MonsterNum];
-	 
+
 }
 
 UWorld::~UWorld()
 {
-	delete MyPlayer;
-	MyPlayer = nullptr;
-
-	delete[] Monsters;
-	Monsters = nullptr;
-}
-
-void UWorld::Start()
-{
-	Monsters[0] = *new ASlime;
-	Monsters[1] = *new ABoar;
-	Monsters[2] = *new AGoblin;
-
-	for (int i = 3; i < MonsterNum; i++)
-	{
-		Monsters[i] = *new ASlime;
-	}
 }

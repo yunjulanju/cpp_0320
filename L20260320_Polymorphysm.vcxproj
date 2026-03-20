@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{138ce389-674b-400d-b45f-c3f4269fed59}</ProjectGuid>
-    <RootNamespace>cpp0320</RootNamespace>
+    <ProjectGuid>{cddfa80f-b2c7-43ca-a29e-560865c76410}</ProjectGuid>
+    <RootNamespace>L20260320Polymorphysm</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -123,23 +123,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Boar.cpp" />
-    <ClCompile Include="Engin.cpp" />
+    <ClCompile Include="Actor.cpp" />
+    <ClCompile Include="Engine.cpp" />
     <ClCompile Include="Goblin.cpp" />
-    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Monster.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Slime.cpp" />
+    <ClCompile Include="WildBoar.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Boar.h" />
-    <ClInclude Include="Engin.h" />
+    <ClInclude Include="Actor.h" />
+    <ClInclude Include="Engine.h" />
     <ClInclude Include="Goblin.h" />
     <ClInclude Include="Monster.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Slime.h" />
+    <ClInclude Include="WildBoar.h" />
     <ClInclude Include="World.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

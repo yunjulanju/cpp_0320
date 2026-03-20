@@ -1,19 +1,20 @@
 #pragma once
-
-class AMonster;
-class APlayer;
-
 class UWorld
 {
 public:
 	UWorld();
 	~UWorld();
 
-	APlayer* MyPlayer;
-	AMonster* Monsters;
+	class APlayer* Player;
 
-	void Start();
+	class AGoblin* Goblins;
+	class ASlime* Slimes;
+	class AWildBoar* WildBoars;
 
-	int MonsterNum;
+	int PlayerCount = 0;
+	int GoblinCount = 0;
+	int SlimeCount = 0;
+	int WildBoarCount = 0;
+
 };
 
