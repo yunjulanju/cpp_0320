@@ -13,6 +13,7 @@ public:
 
 	void Move(int Direction);
 	void Attack();
+	void Die();
 	int Drop();
 };
 
